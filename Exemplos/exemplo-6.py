@@ -2,7 +2,9 @@
     Autor: Daniel Saad Nogueira Nunes
     Comentários: Exemplo da plotagem da função $f(x) = x$ utilizando
     a biblioteca Matplotlib. Neste caso são adicionadas informações nos
-    eixos x e y do gráfico e a legenda correspondente.
+    eixos x e y do gráfico e a legenda correspondente. Além disso, o grid
+    é inserido para melhor visualização do gráfico. Cuidadosamente, os rótulos
+    dos marcadores dos eixos x e y são configurados neste exemplo.
 """
 
 import matplotlib.pyplot as plt
@@ -26,6 +28,12 @@ t_x = ax.set_xlabel("Domínio da função")
 #   Insere título no eixo y
 t_y = ax.set_ylabel("Imagem da Função")
 #   Insere  a legenda
-l = ax.legend()
-#   Mostra o resultado na tela
+l = ax.legend(loc='best')
+#   Seta a visualização do Grid como verdadeira
+ax.grid(True)
+#   Seta os marcadores de 0 a 10 com espaçamento de 0.5 no eixo x
+ax.set_xticks(np.arange(0,10.5,0.5))
+#   Seta os marcadores de 0 a 10 com espaçamento de 0.5 no eixo y
+ax.set_yticks(np.arange(0,10.5,0.5))
+#   Mostra a figura fig resultante
 plt.show()
