@@ -14,7 +14,7 @@ fig = plt.figure()
 ax1 = fig.add_subplot(211);
 ax2 = fig.add_subplot(212)
 #   Gera o conjunto dominio [0,10) com amostras de tamanho 0.5
-x1 = x2   = np.arange(0,10,0.5)
+x1 = x2  = np.arange(0,10,0.5)
 #   Gera a imagem da função f(x) = sin(x)
 y1 = [ np.sin(a) for a in x1 ]
 #   Gera a imagem da função g(x) = cos(x)

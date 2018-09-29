@@ -26,5 +26,6 @@ t_x = ax.set_xlabel("Domínio da função")
 #   Insere título no eixo y
 t_y = ax.set_ylabel("Imagem da Função")
 #   Insere  a legenda
-l = ax.legend(loc='auto')
+
+l = ax.legend(loc='upper right')
 plt.show()

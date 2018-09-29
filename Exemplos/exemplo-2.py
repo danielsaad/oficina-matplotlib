@@ -1,6 +1,6 @@
 """
     Autor: Daniel Saad Nogueira Nunes
-    Comentários: Exemplo da plotagem da função $f(x) = x$ utilizando
+    Comentários: Exemplo da plotagem da função f(x) = x utilizando
     a biblioteca Matplotlib. Neste caso são adicionadas informações nos
     eixos x e y do gráfico.
 """
