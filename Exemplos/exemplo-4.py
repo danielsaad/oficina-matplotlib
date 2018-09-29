@@ -16,9 +16,9 @@ ax = fig.add_subplot(111);
 #   Gera o dominio da função y = x
 x  = np.arange(0,10,0.1) # domínio da função [0,10] com amostras de tamanho 0.1
 #   Gera a imagem da função y = x
-y = [ a for a in x ]
+y = [ a**2   for a in x ]
 #   Plota a imagem e anota a legenda do gráfico
-l = plt.plot(x,y,label=r"$f(x)=x$")
+l = plt.plot(x,y,label=r"$f(x)=x^2$")
 #   Coloca um título correspondente na figura
 t = ax.set_title("Gráfico da Função"+r"$f(x) = x$")
 #   Insere título no eixo x
@@ -27,5 +27,5 @@ t_x = ax.set_xlabel("Domínio da função")
 t_y = ax.set_ylabel("Imagem da Função")
 #   Insere  a legenda
 
-l = ax.legend(loc='upper right')
+l = ax.legend(loc='upper left')
 plt.show()

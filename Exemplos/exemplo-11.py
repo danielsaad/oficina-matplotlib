@@ -49,6 +49,6 @@ ax1.set_yticks(np.arange(-2,2.5,0.5))
 ax2.set_yticks(np.arange(-2,2.5,0.5))
 #   Mostra a figura fig resultante
 fig.show()
-fig.savefig('seno_cosseno.png',dpi='600')
+fig.savefig('seno_cosseno.png',dpi=600)
 fig.savefig('seno_cosseno.pdf')
 fig.savefig('seno_cosseno.svg')
